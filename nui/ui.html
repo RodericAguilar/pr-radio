@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Radio hecha por Perri y Roderic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    
+    <!-- PRINCIPAL -->
+    <div class="container" style="display: none;">
+        <span>Radio</span>
+        
+        <!-- BOTONES -->
+        <div class="frecuencia"><span>Freq.</span>
+            <input type="number" class="numeros">
+            <button type="button" class="boton">Connect</button>
+        </div>
+        
+        <!-- SONIDOS -->
+        <div class="sonidos">
+            <audio id="audio_on" src="sounds/on.ogg"></audio>
+            <audio id="audio_off" src="sounds/off.ogg"></audio>
+            <input type="text" class="sonidos2 sonidoInicial" placeholder="Start Sound">
+            <div class="sonidos">
+                <input type="text" class="sonidos2 sonidofinal" placeholder="Final Sound">
+                
+                <!-- SLIDERS -->
+                
+                <div class="sliders"> 
+                    <label class="textos-volumen">Radio volume</label>
+        <input type="range" class="slid radio-volume" min="0" max="100" step="5">
+        <label class="textos-volumen">Radio clicks</label>
+        <input type="range" class="slid click-volume" min="0" max="1" step="0.025">
+        
+            <!-- BOTONES -->
+            <label class="textos-volumen">Animation</label>
+            <select class="opciones">
+            </select>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

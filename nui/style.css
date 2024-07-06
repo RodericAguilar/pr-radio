@@ -1,0 +1,172 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8vw;
+    user-select: none;
+}
+
+
+
+body {
+    overflow: hidden
+}
+.container  {
+    position: absolute;
+    width: 14%;
+    height: 35%;
+    right: 1vw;
+    
+    bottom: 10vw;
+    background-color: rgba(32, 32, 32, 0.913);
+    border-radius: .8vw;
+
+    box-shadow: 0 0 .3vw black;
+    padding-left: .5vw;
+    padding-top: .7vw;
+
+    padding-right: .5vw;
+    padding-bottom: 1.5vw;
+}
+
+
+.container span {
+    text-shadow: 0 0 .3vw black;
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+
+    font-weight: 600;
+    /* border-radius: .5vw; */
+}
+
+
+
+.frecuencia {
+    padding-top: .5vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.frecuencia span {
+    text-shadow: 0 0 0 transparent;
+    background: rgb(255, 255, 255);
+    color: black;
+
+    font-size: 1vw;
+    padding: .3vw;
+    border: solid .1vw rgb(77, 76, 76);
+    border-top-left-radius: .3vw;
+    border-bottom-left-radius: .3vw;
+    font-weight: 400;
+}
+
+.frecuencia input {
+    width: 6vw;
+    height: 1.8vw;
+    
+    background: #373837;
+    border: transparent;
+    color: white;
+}
+
+input[type='number']{
+    text-align: center;
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text] {
+    width: 13.5vw;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    box-shadow: 0 0 .2vw black;
+    font-size: .8vw;
+    color: rgb(255, 255, 255);
+    
+    text-shadow: 0 0 .1vw black;
+    background-color: transparent;
+    justify-content: center;
+
+    width: 5vw;
+    transition: all .3s;
+    border-top-right-radius: .3vw;
+
+    border-bottom-right-radius: .3vw;
+    height: 2vw;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
+}
+
+.boton:active {
+    transition: all .3s;
+    transform: scale(1.05);
+}
+
+.sonidos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    top: 15%;
+    margin-top: 2vw;
+
+}
+
+.sonidos2 {
+    background: black;
+    border: solid .1vw white;
+    height: 2vw;
+    
+    border: solid .1vw rgb(77, 76, 76);
+    color: white;
+    border-radius: .4vw;
+}
+
+.sonidofinal {
+    margin-top: 1vw;
+}
+
+
+
+.textos-volumen {
+    color: rgb(163, 161, 161);
+    margin-top: .5vw;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    gap: .2vw;
+
+}
+
+.opciones {
+    margin-top: .3vw;
+    background-color: rgb(35, 35, 35);
+    border: solid .1vw rgba(128, 128, 128, 0.514);
+
+    color: white;
+    height: 2.3vw;
+}
+
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
